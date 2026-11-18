@@ -1,0 +1,50 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ea408db7-05a3-4edb-a3d3-275404f71267</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>APPLICACION_DE_BALONCESTO__GODOT_DE_BALONCESTO_.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>APPLICACION DE BALONCESTO (GODOT DE BALONCESTO)</Name>
+    <RootNamespace>APPLICACION DE BALONCESTO (GODOT DE BALONCESTO)</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="APPLICACION_DE_BALONCESTO__GODOT_DE_BALONCESTO_.py" />
+    <Compile Include="app\app_backend\manage_trainer_info\trainer_teams\add_teams.py" />
+    <Compile Include="loading\loading_player.py" />
+    <Compile Include="loading\loading_teams.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\app_backend\" />
+    <Folder Include="app\app_backend\manage_trainer_info\" />
+    <Folder Include="app\app_backend\manage_trainer_info\trainer_teams\" />
+    <Folder Include="loading\" />
+    <Folder Include="app\" />
+    <Folder Include="teams\" />
+    <Folder Include="teams\Ram\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="teams\Ram\Ram.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
